@@ -23,7 +23,7 @@ const TableResult = (props) => (
                     </Table.Cell>
                     {/*<Table.Cell> {props.props[key].name}</Table.Cell>*/}
                     <Table.Cell> {props.props[key].cpf}</Table.Cell>
-                    <Table.Cell>{String(props.props[key].distance.toFixed(2))}</Table.Cell>
+                    <Table.Cell>{String(((1 - props.props[key].distance) * 100).toFixed(2))} %w</Table.Cell>
                 </Table.Row>
             )}
         </Table>

@@ -249,6 +249,16 @@ class App extends React.Component {
                             value={this.state.name}
                             onChange={this.handleChange}
                           />
+                          </Form.Group>
+                          <Form.Group >
+                          <Form.Input style={{ width: '400px', padding: '10px' }}
+                            label='Sobrenome'
+                            placeholder='Sobrenome'
+                            name='last_name'
+                            required
+                            value={this.state.last_name}
+                            onChange={this.handleChange}
+                          />
                         </Form.Group>
                         <Form.Group>
                           <Form.Input style={{ width: '400px', padding: '10px' }}
